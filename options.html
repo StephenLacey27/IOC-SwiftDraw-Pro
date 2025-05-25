@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>IOC-SwiftDraw Pro Options</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+    }
+    fieldset {
+      width: 80%;
+      margin: 1em auto;
+      border: 1px solid #ccc;
+    }
+    legend {
+      font-weight: bold;
+    }
+    table {
+      width: 90%;
+      margin: 0.5em auto;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+    th, td {
+      width: 50%;
+      padding: 0.5em;
+      text-align: left;
+      word-wrap: break-word;
+    }
+    th {
+      background: #f0f0f0;
+    }
+    .reminder {
+      margin: 1em 0;
+      font-style: italic;
+    }
+    .save-bar {
+      margin: 1em 0;
+    }
+    button {
+      font-size: 1em;
+      padding: 0.5em 1em;
+      cursor: pointer;
+    }
+    #status {
+      margin-left: 1em;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1>🕵️ IOC-SwiftDraw Pro : Configure Your OSINT Loadout 🐇</h1>
+
+  <div class="reminder">Ensure to click 💾 Save at the Bottom to apply changes</div>
+
+  <form id="options-form">
+    <div id="swift-categories"></div>
+
+    <div class="save-bar">
+      <button type="submit">💾 Save Settings</button>
+      <span id="status"></span>
+    </div>
+  </form>
+
+  <script src="options.js"></script>
+</body>
+</html>
