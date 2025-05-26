@@ -1,7 +1,8 @@
 {
   "manifest_version": 3,
   "name": "IOC-SwiftDraw Pro",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "version_name": "Privacy-policy release",
   "description": "Fast, secure OSINT context menu extension for IOCs with customizable SwiftDraw Pro.",
   "icons": {
     "16": "icons/icon-16.png",
@@ -10,16 +11,12 @@
   },
   "permissions": [
     "contextMenus",
-    "storage",
-    "tabs"
+    "storage"
   ],
   "background": {
     "service_worker": "background.js"
   },
   "options_page": "options.html",
-  "host_permissions": [
-    "*://*/*"
-  ],
   "action": {
     "default_icon": {
       "16": "icons/icon-16.png",
