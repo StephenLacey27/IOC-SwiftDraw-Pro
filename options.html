@@ -8,60 +8,69 @@
       font-family: sans-serif;
       text-align: center;
     }
-    fieldset {
-      width: 80%;
-      margin: 1em auto;
-      border: 1px solid #ccc;
-    }
-    legend {
-      font-weight: bold;
-    }
-    table {
-      width: 90%;
-      margin: 0.5em auto;
-      border-collapse: collapse;
-      table-layout: fixed;
-    }
-    th, td {
-      width: 50%;
-      padding: 0.5em;
-      text-align: left;
-      word-wrap: break-word;
-    }
-    th {
-      background: #f0f0f0;
+    h2, h3 {
+      margin-top: 1.2em;
+      margin-bottom: 0.3em;
     }
     .reminder {
       margin: 1em 0;
       font-style: italic;
     }
-    .save-bar {
-      margin: 1em 0;
+    .category {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin: 1em auto;
+      padding: 0.6em 1em;
+      width: 80%;
+      background: #fafbfc;
+      text-align: left;
     }
-    button {
-      font-size: 1em;
-      padding: 0.5em 1em;
+    .category h3 {
+      text-align: left;
+      margin-bottom: 0.5em;
+    }
+    label {
+      margin-left: 0.4em;
+      margin-right: 1.5em;
+    }
+    #profileSelectorDiv {
+      margin: 1.2em auto 1em auto;
+      text-align: center;
+    }
+    #categories {
+      margin: 1.2em auto;
+      width: 100%;
+    }
+    #saveBtn {
+      margin-top: 2em;
+      font-size: 1.1em;
+      padding: 0.7em 1.3em;
+      border-radius: 8px;
+      background: #14c984;
+      border: none;
+      color: white;
       cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 2px 6px #3331;
+      transition: background 0.2s;
     }
-    #status {
-      margin-left: 1em;
-      color: green;
+    #saveBtn:hover {
+      background: #16e49c;
     }
   </style>
 </head>
 <body>
-  <h1>🕵️ IOC-SwiftDraw Pro : Configure Your OSINT Loadout 🐇</h1>
+  <h2>🕵️ IOC-SwiftDraw Pro : Configure Your OSINT Loadout 🐇</h2>
+  <div class="reminder">Ensure to click 💾 <b>Save</b> at the Bottom to apply changes</div>
+  
 
-  <div class="reminder">Ensure to click 💾 Save at the Bottom to apply changes</div>
 
-  <form id="options-form">
-    <div id="swift-categories"></div>
-
-    <div class="save-bar">
-      <button type="submit">💾 Save Settings</button>
-      <span id="status"></span>
-    </div>
-  </form>
+  <!-- Profile selector injected here -->
+  <div id="profileSelectorDiv"></div>
+  <!-- Dynamic categories and tools rendered here -->
+  <div id="categories"></div>
+  <!-- Save button added here by JS or static -->
+  <button id="saveBtn">💾 Save</button>
 
   <script src="options.js"></script>
 </body>
