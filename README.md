@@ -4,199 +4,262 @@
 
 > Ready. Set. Investigate.
 
-A fast, secure, and fully customizable Chrome and Firefox extension for cybersecurity pros. Pivot on IOCs (IPs, domains, hashes, URLs, emails, sandbox artifacts) in a single right-click.
+IOC-SwiftDraw Pro is a fast, privacy-first Chrome extension built for security analysts, threat hunters, and OSINT researchers who need to pivot on Indicators of Compromise instantly—without ever leaving the browser. With a single right-click, you can query your choice of dozens of specialized services across IPs, domains, hashes, URLs, emails, sandbox artifacts, ASNs and more, either one at a time or all at once via fully customizable “SwiftDraw Pro” loadouts.
 
 ---
 
 ## 🚀 Features
 
-* **Custom Context Menus**
+- 🕵️‍♂️ **Profiles & Presets**  
+  Pick a role to auto-load its curated toolset:
+  - Default  
+  - ALL  
+  - SOC Analyst  
+  - Incident Responder  
+  - Threat Intel  
+  - OSINT Investigator  
+
+- 🗂️ **Custom Context Menus**  
   Toggle exactly which OSINT sources appear under each IOC type.
 
-* **🏹 SwiftDraw Pro Loadouts**
+- 🏹 **SwiftDraw Pro Loadouts**  
   Pre-select your go-to tools and launch them all at once (bulk-open checked sources).
 
-* **Two-Column Options UI**
+- 🧛‍♂️ **Defang & Re-fang Support**  
+  Automatically “defang” and re-inject common IOC obfuscations (`hxxp`, `[.]`, `(dot)`, `[at]`) so you can right-click even defanged text.
 
-  * 📁 **OSINT Sources:** include/exclude tools in your right-click menu
-  * 🏹 **SwiftDraw Pro Loadout:** include/exclude tools in the multi-launch action
+- **Two-Column Options UI**  
+  - 📄 **OSINT Sources** – include/exclude tools in your right-click menu  
+  - 🏹 **SwiftDraw Pro Loadout** – include/exclude tools in each category’s SwiftDraw loadout
 
-* **Pre-Configured Defaults**
-  Ready on first install with a curated loadout. 
+- 🧰 **Extensible Categories & Tools**  
+  Customize which of these categories and dozens of sources you want:
+  - IP  
+  - Domain  
+  - Hash  
+  - URL  
+  - Email  
+  - Sandbox  
+  - ASN  
+  - File  
+  - Vulnerabilities  
+  - Blockchain  
+  - Utilities  
+  - ThreatIntel  
+  - Misc  
 
-* **Privacy-First**
-  No tracking or analytics—settings stay in your browser.
+- 🔒 **Privacy-First**  
+  No tracking or analytics—settings stay in your browser, synced only via Chrome’s storage.
 
 ---
 
 ## ⚙️ Usage
 
-1. **Highlight** or **right-click** any IOC in your browser.
-2. Choose your category (IP, Domain, Hash, URL, Email, Sandbox).
-3. Click an individual OSINT tool to query the IOC, or **🏹 SwiftDraw Pro** to open all your pre-selected tools.
+1. **Highlight** or **right-click** any IOC in your browser.  
+2. Choose your category (IP, Domain, Hash, URL, Email, Sandbox, ASN, File, etc.).  
+3. Click an individual OSINT tool to query the IOC, or **🏹 SwiftDraw** under that category to fire all your pre-selected loadout tools.
 
 ---
 
-## 🛠 How to Configure the Extension
+## 🛠 How to Configure
 
-1. Navigate to your browser’s extensions page (`chrome://extensions` or `about:debugging#/runtime/this-firefox`).
-2. Find **IOC-SwiftDraw Pro** and click **Details**.
-3. Click **Extension options**.
-4. On the settings page, use the two columns:
-
-   * **OSINT Sources** (📁): check the boxes for tools you want in your context menu.
-   * **SwiftDraw Pro Loadout** (🏹): check the boxes for tools you want included in the bulk launch.
-5. Click **Save Settings**.
-
-> **Note:** Firefox support is coming soon.
+1. Open the Extensions page:  
+   - **Chrome:** `chrome://extensions` → find **IOC-SwiftDraw Pro** → **Details** → **Extension options**  
+2. In the options UI:  
+   - **Profile Selector**: pick a preset or **Custom**.  
+   - **Two-Column Grid**:  
+     - Left column (📄): check the tools you want in your right-click menu.  
+     - Right column (🏹): check the tools you want in each category’s SwiftDraw loadout.  
+3. Click **💾 Save**. Menus rebuild instantly.
 
 ---
 
-## 🛠 IOC Types and Supported Tools
+## 🛠 IOC Types & Supported Tools
 
 ### IP
-
-* AbuseIPDB
-* AlienVault OTX
-* ARIN
-* BlacklistMaster
-* FortiGuard
-* GreyNoise
-* HackerTarget
-* IPInfo
-* IPVoid
-* IPQualityScore
-* MXToolbox
-* Pulsedive
-* Scamalytics
-* SecurityTrails
-* Shodan
-* Spur.us
-* Spyse
-* Talos
-* ThreatCrowd
-* ThreatMiner
-* Tor Relay Search
-* URLhaus
-* VirusTotal
-* X-Force
+- AbuseIPDB  
+- AlienVault OTX  
+- ARIN WHOIS  
+- BlacklistMaster  
+- BGPView  
+- Censys  
+- DNSlytics  
+- GreyNoise  
+- HackerTarget  
+- Hurricane BGP  
+- IPInfo  
+- IPVoid  
+- MXToolbox  
+- ONYPHE  
+- OTX (AlienVault)  
+- Pulsedive  
+- Robtex  
+- Scamalytics  
+- SecurityTrails  
+- Shodan  
+- Spur  
+- Talos Intelligence  
+- ThreatMiner  
+- TOR Relay Search  
+- URLhaus  
+- VirusTotal  
+- X-Force Exchange  
+- ZoomEye  
 
 ### Domain
-
-* Alexa
-* Bluecoat
-* Censys
-* FortiGuard
-* Host.io
-* MXToolbox
-* Pulsedive
-* SecurityTrails
-* Shodan
-* Spyse
-* Talos
-* ThreatCrowd
-* ThreatMiner
-* Tor Relay Search
-* URLhaus
-* VirusTotal
-* X-Force
-* SSL Labs
+- BlueCoat  
+- Censys  
+- host.io  
+- MXToolbox  
+- Pulsedive  
+- SecurityTrails  
+- Shodan  
+- Talos Intelligence  
+- ThreatMiner  
+- URLhaus  
+- VirusTotal  
+- X-Force Exchange  
 
 ### Hash
-
-* AlienVault OTX
-* Hybrid Analysis
-* MalShare
-* Talos
-* ThreatMiner
-* URLhaus
-* VirusTotal
-* X-Force
+- OHT HashTools  
+- AlienVault OTX  
+- Hybrid Analysis  
+- Joe Sandbox  
+- MalShare  
+- MalwareBazaar  
+- ThreatMiner  
+- VirusTotal  
+- X-Force Exchange  
 
 ### URL
-
-* ANY.RUN
-* Bluecoat
-* FortiGuard
-* HackerTarget Extract Links
-* Sucuri SiteCheck
-* TrendMicro Site Safety
-* URLhaus
-* VirusTotal
-* X-Force
-* Zscaler Zulu
+- Any.Run  
+- Archive.today  
+- Archive.org  
+- BlueCoat  
+- Browserling  
+- Checkphish  
+- Hybrid Analysis  
+- OTX (AlienVault)  
+- Pulsedive  
+- Sucuri SiteCheck  
+- URLhaus  
+- urlscan.io  
+- VirusTotal  
+- X-Force Exchange  
+- Zscaler Zulu  
 
 ### Email
-
-* ICANN WHOIS Lookup
-* Have I Been Pwned
-* MXToolbox
+- EmailRep  
+- Have I Been Pwned  
+- ICANN WHOIS Lookup  
+- MXToolbox  
+- Thatsthem  
+- ThreatConnect  
+- Usersearch  
 
 ### Sandbox
+- ANY.RUN  
+- Browserling  
+- Hybrid Analysis  
+- Joe Sandbox  
+- Siteshot  
+- Triage  
+- urlscan.io  
+- VirusTotal  
 
-* ANY.RUN
-* Joe Sandbox
-* Triage
-* Browserling
-* Siteshot
-* URLScan
+### ASN
+- BGPView  
+- Censys  
+- Hurricane BGP  
+- IPInfo  
+
+### File
+- CyberChef  
+- LOLBAS  
+- OHT HashTools  
+- Regex101  
+- Dynamite Lab  
+- EMN Tools  
+
+### Vulnerabilities
+- MITRE CVE  
+- NVD  
+- Exploit-DB  
+- CISA Known Exploited Vulnerabilities Catalog  
+- OSV  
+- Recorded Future Vulnerability Database  
+- Snyk Security  
+- Feedly CVE  
+
+### Blockchain
+- BitcoinAbuse  
+- Blockchain.com  
+- Blockchair  
+- BlockCypher  
+- Etherscan  
+- Ethplorer  
+
+### Utilities
+- Regex101  
+- EMN Tools  
+- CyberChef  
+- Pastebin  
+- Grep.app  
+- Exif.Tools  
+
+### ThreatIntel
+- Intelligence X  
+- OOCPR  
+- Pulsedive  
+- ThreatFox  
+- TIP (ThreatIntelligencePlatform)  
+- Spamhaus  
+
+### Misc
+- Fast.com  
+- Speedtest.net  
+- Downdetector  
+- IsItDownRightNow  
+- IsUp.me  
+- Check Point Threat Map  
+- Kaspersky Cybermap  
+- JSON Formatter & Validator  
 
 ---
 
 ## 💾 Installation
 
 ### Chrome
-
 ```bash
-# 1. Go to chrome://extensions  
-# 2. Enable “Developer mode”  
-# 3. Click “Load unpacked”  
-# 4. Select this repo’s `chrome/` folder
-```
+1. Go to chrome://extensions  
+2. Enable “Developer mode”  
+3. Click “Load unpacked”  
+4. Select this repo’s `chrome/` folder
 
-### Firefox (Coming Soon)
+Firefox (Coming Soon)
 
-```bash
-# 1. Go to about:debugging#/runtime/this-firefox  
-# 2. Click “Load Temporary Add-on”  
-# 3. Select `manifest.json` from the `firefox/` folder
-```
+1. Go to about:debugging#/runtime/this-firefox  
+2. Click “Load Temporary Add-on”  
+3. Select `manifest.json` from the `firefox/` folder
 
----
+🔧 Development
 
-## 🔧 Development
-
-```bash
 git clone https://github.com/StephenLacey27/IOC-SwiftDraw-Pro.git
 cd IOC-SwiftDraw-Pro
-```
+# Edit background.js, options.js, or options.html
+# Reload the extension to test your changes
 
-* Edit `background.js`, `options.html`, or `options.js`.
-* Reload the unpacked extension in Chrome/Firefox to test.
+🤝 Contributing
 
----
+    Fork this repo
 
-## 🤝 Contributing
+    Create a branch: git checkout -b feature/YourFeature
 
-1. Fork this repo
-2. Create a branch:
+    Commit: git commit -m "Add YourFeature"
 
-   ```bash
-   git checkout -b feature/YourFeature
-   ```
-3. Commit your changes:
+    Push & open a PR
 
-   ```bash
-   git commit -m "Add YourFeature"
-   ```
-4. Push & open a PR.
-
----
-
-## 📄 License
-
-Distributed under the **MIT License**. See [LICENSE](LICENSE) for details.
-
----
+📄 License
+Distributed under the MIT License. See LICENSE for details.
 
 © 2025 Stephen Lacey | Cybersecurity Analyst & OSINT Engineer
