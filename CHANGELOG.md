@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.1] – 2025-06-02
+
+### Added
+- Firefox compatibility: introduced a `firefox/` folder containing:
+  - A `manifest.json` adapted for Firefox’s `browser.*` APIs
+  - Updated `background.js` and `options.html/js` to use `browser.runtime` and `browser.storage`
+  - A build script to generate a Firefox-compatible XPI for distribution
+- README update: “How to Install” section now includes step-by-step instructions for loading the extension in Firefox (temporary add-on and packaging into an XPI).
+
+### Changed
+- Refactored API calls in `background.js` and `options.js` to abstract between `chrome.*` and `browser.*` namespaces, ensuring seamless cross-browser functionality.
+- Updated build pipeline to output both `chrome/` and `firefox/` artifacts under the same version tag.
+
+### Fixed
+- Adjusted permissions and CSP entries in the Firefox `manifest.json` to align with Mozilla’s add-on guidelines and prevent console warnings during installation.
+
+
 ---
 
 ## [1.2.0] – 2025-05-29
