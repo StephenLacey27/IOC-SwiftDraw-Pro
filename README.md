@@ -4,7 +4,7 @@
 
 > Ready. Set. Investigate.
 
-IOC-SwiftDraw Pro is a fast, privacy-first Chrome extension built for security analysts, threat hunters, and OSINT researchers who need to pivot on Indicators of Compromise instantly—without ever leaving the browser. With a single right-click, you can query your choice of dozens of specialized services across IPs, domains, hashes, URLs, emails, sandbox artifacts, ASNs and more, either one at a time or all at once via fully customizable “SwiftDraw Pro” loadouts.
+IOC-SwiftDraw Pro is a fast, privacy-first Chrome/Firefox extension built for security analysts, threat hunters, and OSINT researchers who need to pivot on Indicators of Compromise instantly—without ever leaving the browser. With a single right-click, you can query your choice of dozens of specialized services across IPs, domains, hashes, URLs, emails, sandbox artifacts, ASNs and more, either one at a time or all at once via fully customizable “SwiftDraw Pro” loadouts.
 
 ---
 
@@ -65,6 +65,7 @@ IOC-SwiftDraw Pro is a fast, privacy-first Chrome extension built for security a
 
 1. Open the Extensions page:  
    - **Chrome:** `chrome://extensions` → find **IOC-SwiftDraw Pro** → **Details** → **Extension options**  
+   - **Firefox:** `about:addons` → find **IOC-SwiftDraw Pro** → **Preferences** (or see “Load Temporary Add-on” if installing unpacked)  
 2. In the options UI:  
    - **Profile Selector**: pick a preset or **Custom**.  
    - **Two-Column Grid**:  
@@ -230,26 +231,25 @@ IOC-SwiftDraw Pro is a fast, privacy-first Chrome extension built for security a
 ## 💾 Installation
 
 ### Chrome
-```bash
-1. Go to chrome://extensions  
-2. Enable “Developer mode”  
-3. Click “Load unpacked”  
+1. Go to `chrome://extensions`
+2. Enable “Developer mode”
+3. Click “Load unpacked”
 4. Select this repo’s `chrome/` folder
 
-Firefox (Coming Soon)
+### Firefox
+1. Go to `about:debugging#/runtime/this-firefox`
+2. Click “Load Temporary Add-on”
+3. Select `firefox/manifest.json`
 
-1. Go to about:debugging#/runtime/this-firefox  
-2. Click “Load Temporary Add-on”  
-3. Select `manifest.json` from the `firefox/` folder
 
-🔧 Development
+## 🔧 Development
 
 git clone https://github.com/StephenLacey27/IOC-SwiftDraw-Pro.git
 cd IOC-SwiftDraw-Pro
 # Edit background.js, options.js, or options.html
 # Reload the extension to test your changes
 
-🤝 Contributing
+## 🤝 Contributing
 
     Fork this repo
 
@@ -259,7 +259,12 @@ cd IOC-SwiftDraw-Pro
 
     Push & open a PR
 
-📄 License
+## 📄 License
+
 Distributed under the MIT License. See LICENSE for details.
 
 © 2025 Stephen Lacey | Cybersecurity Analyst & OSINT Engineer
+
+## 🙏 Acknowledgments
+Special thanks to Beau Brasher for his invaluable help with profiles and testing throughout development. Your insights and feedback have helped IOC-SwiftDraw Pro reach its full potential!
+
