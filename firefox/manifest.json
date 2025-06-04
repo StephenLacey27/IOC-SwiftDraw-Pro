@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "IOC-SwiftDraw Pro",
+  "version": "1.2.0",
+  "description": "Right-click to launch OSINT lookups in bulk.",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  },
+  "permissions": [
+    "contextMenus",
+    "storage",
+    "tabs",
+    "<all_urls>"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "applications": {
+    "gecko": {
+      "id": "iocswiftdrawpro@example.com",
+      "strict_min_version": "109.0"
+    }
+  }
+}
