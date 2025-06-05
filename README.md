@@ -245,9 +245,6 @@ IOC-SwiftDraw Pro is a fast, privacy-first Chrome/Firefox extension built for se
 ## 🔧 Development
 
 git clone https://github.com/StephenLacey27/IOC-SwiftDraw-Pro.git
-cd IOC-SwiftDraw-Pro
-# Edit background.js, options.js, or options.html
-# Reload the extension to test your changes
 
 ## 🤝 Contributing
 
@@ -260,7 +257,6 @@ cd IOC-SwiftDraw-Pro
     Push & open a PR
 
 ## 📄 License
-
 Distributed under the MIT License. See LICENSE for details.
 
 © 2025 Stephen Lacey | Cybersecurity Analyst & OSINT Engineer
